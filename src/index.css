@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.employees{
+  background-color: #eaf7ff;
+  padding: 5px 0 50px 0;
+}
+.alertify-notifier.ajs-bottom.ajs-right{
+  color: #FFFFFF;
+}
+.employee-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  min-height: 280px;
+}
+.employee-item > * {
+  margin-bottom: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.myForm{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+#addPostBtn{
+  width: 50%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+
+@media screen and (max-width : 768px) {
+  .form-order{
+      order: 0;
+  }
+  .number-order{
+      order: -1;
+  }
+  .empdetails{
+    order: -2;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #addPostBtn{
+    width: 50%;
+      display: block;
+      text-align: center;
+      margin: auto;
+  }
+  .myForm .form-control{
+    display: inline-block ;
+    width: 45%;
+    margin: 0px 15px;
+  }
 }
